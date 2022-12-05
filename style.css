@@ -1,0 +1,152 @@
+body {
+  background: #161616;
+}
+
+.fa-globe{
+	font-size: 700px;
+	background-image: linear-gradient(to bottom, mediumpurple, cyan, yellow, pink, mediumpurple);
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-size: 200% 200%;
+	opacity: 50%;
+	animation: 60s linear rotate-symbol infinite;
+	-webkit-animation: 60s linear rotate-symbol infinite;
+}
+
+@keyframes rotate-symbol{
+	0%{
+		rotate: 0deg;
+		background-position: 0% 0%;
+	}
+	100%{
+		rotate: 360deg;
+		background-position: 0% -200%;
+	}
+}
+
+#book-symbol{
+	position: absolute;
+	top: 35%;
+	left: -100px;
+	animation: rotate-symbol-fast 15s ease-in infinite;
+	animation-play-state: paused;
+}
+
+#book-symbol:hover{
+  animation-play-state: running;
+}
+
+@keyframes rotate-symbol-fast{
+	0%{
+		rotate: 0deg;
+	}
+	100%{
+		rotate: 360deg;
+	}
+}
+
+#header{
+	transition: all ease-out 0.5s;
+	font-family: "Kanit";
+	display: table;
+  	margin: 0 auto;
+}
+
+#header-tag{
+  background-image: linear-gradient(to bottom, yellow, pink, mediumpurple);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 150px;
+  animation: 2.5s ease-out anim;
+  transform:scale(1)
+}
+
+@keyframes anim{
+  0% {
+    opacity: 0%
+  }
+  100% {
+    opacity: 100%
+  }
+}
+
+.login-input{
+	display: table;
+  	margin: 0 auto;
+}
+
+.login{
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	margin-left: 0;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+input[type=text]{
+	margin: 5px;
+	background: #2C2C2C;
+	border-radius: 20px;
+	color: pink;
+	font-size: 30px;
+	padding-left: 2rem;
+}
+
+input[type=password]{
+	margin: 5px;
+	background: #2C2C2C;
+	border-radius: 20px;
+	color: pink;
+	font-size: 30px;
+	padding-left: 2rem;
+}
+
+.login-input-field{
+	position: relative;
+}
+
+.login-input-field::before{
+	content: '';
+	color: pink;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	left: 0.3rem;
+	top: 50%;
+	transform: translateY(-40%);
+}
+
+.fa-lock{
+	color: #FFD73E;
+	font-size: 15px;
+	position: relative;
+	top: -5px;
+	left: 35px;
+}
+
+.fa-user{
+	color: #FFD73E;
+	font-size: 15px;
+	position: relative;
+	top: -5px;
+	left: 35px;
+}
+
+.login-input-field-user::before{
+	content: .fa-user;
+}
+
+input[type=submit]{
+	appearance: none;
+	border-radius: 20px;
+	background: #2C2C2C;
+	font-size: 30px;
+	color: pink;
+}
