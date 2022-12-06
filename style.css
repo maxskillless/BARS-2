@@ -29,7 +29,7 @@ body {
 	position: absolute;
 	top: 35%;
 	left: -100px;
-	animation: rotate-symbol-fast 15s ease-in infinite;
+	animation: rotate-symbol-fast 15s linear infinite;
 	animation-play-state: paused;
 }
 
@@ -51,6 +51,7 @@ body {
 	font-family: "Kanit";
 	display: table;
   	margin: 0 auto;
+  	text-align: center;
 }
 
 #header-tag{
@@ -75,35 +76,38 @@ body {
 .login-input{
 	display: table;
   	margin: 0 auto;
+  	position: relative;
 }
 
 .login{
 	position: absolute;
 	width: 100%;
-	top: 40%;
-	margin-left: 0;
+	margin-left: -10px;
 	margin-right: auto;
+	margin-top: auto;
 	left: 0;
 	right: 0;
 	text-align: center;
 }
 
 input[type=text]{
-	margin: 5px;
+	margin-bottom: 5px;
 	background: #2C2C2C;
 	border-radius: 20px;
 	color: pink;
 	font-size: 30px;
-	padding-left: 2rem;
+	padding-left: 35px;
+	padding-right: -35px;
 }
 
 input[type=password]{
-	margin: 5px;
+	margin-bottom: 5px;
 	background: #2C2C2C;
 	border-radius: 20px;
 	color: pink;
 	font-size: 30px;
-	padding-left: 2rem;
+	padding-left: 35px;
+	padding-right: -35px;
 }
 
 .login-input-field{
@@ -128,7 +132,7 @@ input[type=password]{
 	font-size: 15px;
 	position: relative;
 	top: -5px;
-	left: 35px;
+	left: 30px;
 }
 
 .fa-user{
@@ -136,17 +140,20 @@ input[type=password]{
 	font-size: 15px;
 	position: relative;
 	top: -5px;
-	left: 35px;
+	left: 30px;
 }
 
 .login-input-field-user::before{
 	content: .fa-user;
 }
 
-input[type=submit]{
+input[type=button]{
 	appearance: none;
 	border-radius: 20px;
+	border-color: gray;
 	background: #2C2C2C;
 	font-size: 30px;
 	color: pink;
+	padding-left: 10px;
+	padding-right: 10px;
 }
