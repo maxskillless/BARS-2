@@ -59,9 +59,21 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 150px;
+  font-size: 75px;
   animation: 2.5s ease-out anim;
   transform:scale(1)
+}
+
+@media (min-width: 600px) {
+	#header-tag{
+	  background-image: linear-gradient(to bottom, yellow, pink, mediumpurple);
+	  color: transparent;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+	  font-size: 150px;
+	  animation: 2.5s ease-out anim;
+	  transform:scale(1)
+	}
 }
 
 @keyframes anim{
